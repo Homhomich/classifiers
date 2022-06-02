@@ -11,9 +11,11 @@ import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
-    # app = QApplication(sys.argv)
-    # ex = Example()
-    # sys.exit(app.exec_())
-    random_forest_test_and_train('datasets/rice_with_spreading.xlsx', 'datasets/rice_withOUT_spreading.xlsx', ["Ширина", "Высота", "Площадь"])
+    random_forest_test_and_train('datasets/rice_with_spreading.xlsx', 'datasets/rice_withOUT_spreading.xlsx',
+                                 ["Ширина", "Высота", "Площадь"])
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
+    # random_forest_test_and_train('datasets/rice_with_spreading.xlsx', 'datasets/rice_withOUT_spreading.xlsx', ["Ширина", "Высота", "Площадь"])
     # draw_features('datasets/plots/mixed.xlsx', "Square", "Length")
-    # random_forest_learning_curve('datasets/normalized_rice.xlsx', ["Ширина", "Высота", "Площадь", "Периметр"])
+   # random_forest_learning_curve('datasets/normalized_rice.xlsx', ["Ширина", "Высота", "Площадь", "Периметр"])
